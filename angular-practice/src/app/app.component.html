@@ -235,6 +235,16 @@
         @for (item of [
           { title: 'Home', link: '/' },
           { title: 'Counter', link: '/Counter' },
+        ]; track item.title) {
+          <a
+            class="pill"
+            [routerLink]="item.link"
+            rel="noopener"
+          >
+            <span>{{ item.title }}</span>
+          </a>
+        }
+        @for (item of [
           { title: 'My Github', link: 'https://github.com/swoojung7' },
           { title: '상암 고깃집 몽미', link: 'https://naver.me/GBFHJpAD' },
           { title: '장범준 - 전쟁이나면', link: 'https://youtu.be/UoPg7Bt4gc0?si=iZ070qUuUbpdzQjK' },

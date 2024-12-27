@@ -1,6 +1,8 @@
-<h2>Counter Page</h2>
-<p>Current Count: {{ counter }}</p>
-<button (click)="increaseCounter()">Increase</button>
-<a routerLink="/">Go to Home</a>
+<h1 align="center">{{ counter }}</h1>
+<button (click)="decreaseCounter(10)">-10</button>
+<button (click)="decreaseCounter(1)">-1</button>
+<button (click)="resetCounter()">Reset</button>
+<button (click)="increaseCounter(1)">+1</button>
+<button (click)="increaseCounter(10)">+10</button>
 
 <!-- <router-outlet /> -->

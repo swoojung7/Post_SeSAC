@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'angular-practice' title`, () => {
+  it(`should have the 'Post_SeSAC' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-practice');
+    expect(app.title).toEqual('Post_SeSAC');
   });
 
   it('should render title', () => {
