@@ -1,6 +1,18 @@
-button {
-    background-color: #4CAF50;
-    color: white;
+.plus-button {
+  --button-accent: #4CAF50;
+}
+
+.minus-button {
+  --button-accent: #f44336;
+}
+
+.reset-button {
+  --button-accent: black;
+}
+
+.counter-button {
+    background-color: color-mix(in srgb, var(--button-accent) 10%, transparent);
+    color: var(--button-accent);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -13,11 +25,11 @@ button {
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
-    background-color: #45a049;
+  .counter-button:hover {
+    background-color: color-mix(in srgb, var(--button-accent) 40%, transparent);
   }
   
-  button:active {
-    background-color: #3e8e41;
+  .counter-button:active {
+    background-color: color-mix(in srgb, var(--button-accent) 70%, transparent);
   }
   
