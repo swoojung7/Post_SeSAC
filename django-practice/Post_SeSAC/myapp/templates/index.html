@@ -1,0 +1,21 @@
+<!-- myapp/templates/index.html -->
+{% load static %}  <!-- 이 라인을 추가해주세요 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    
+    <!-- 빌드된 CSS 파일을 static을 통해 불러오기 -->
+    <link rel="stylesheet" href="{% static 'css/chunk-vendors.a3035f21.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.c57faa46.css' %}"> <!-- app 스타일시트 -->
+</head>
+<body>
+    <div id="app"></div>  <!-- Vue 앱이 렌더링될 div -->
+    
+    <!-- 빌드된 JS 파일을 static을 통해 불러오기 -->
+    <script src="{% static 'js/chunk-vendors.09f89bae.js' %}"></script>
+    <script src="{% static 'js/app.9b5083d1.js' %}"></script>  <!-- Vue 애플리케이션 JS -->
+</body>
+</html>
